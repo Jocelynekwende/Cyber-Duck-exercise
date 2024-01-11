@@ -16,7 +16,7 @@ resource "aws_subnet" "subnet_b" {
 
 resource "aws_security_group" "rds_sg" {
   name_prefix = "rds-"
-  description = "Security Group for RDS"
+  description = "Security group for RDS"
   vpc_id = aws_vpc.my_vpc.id
   ingress {
     from_port   = 3306
